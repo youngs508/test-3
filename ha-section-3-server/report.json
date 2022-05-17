@@ -1,0 +1,225 @@
+{
+  "stats": {
+    "suites": 8,
+    "tests": 12,
+    "passes": 8,
+    "pending": 0,
+    "failures": 4,
+    "start": "2022-05-04T22:49:34.718Z",
+    "end": "2022-05-04T22:49:34.930Z",
+    "duration": 212
+  },
+  "tests": [
+    {
+      "title": "🧩 데이터베이스에 연결해야 합니다.",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  데이터베이스 연결\n====================\n 🧩 데이터베이스에 연결해야 합니다.",
+      "duration": 3,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 데이터베이스에 `users` 테이블이 존재해야 합니다.",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  데이터베이스 연결\n====================\n 🧩 데이터베이스에 `users` 테이블이 존재해야 합니다.",
+      "duration": 3,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "HTTPS 프로토콜을 사용하는 서버여야 합니다.",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 Protocol - HTTP over Secure HTTPS 프로토콜을 사용하는 서버여야 합니다.",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 로그인 요청시 전달받은 유저아이디, 비밀번호가 데이터베이스에 저장된 정보와 완벽히 일치하는 경우, 'ok' 메세지와 상태코드 200이 응답에 포함되어야 합니다",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 POST /signin 🧩 로그인 요청시 전달받은 유저아이디, 비밀번호가 데이터베이스에 저장된 정보와 완벽히 일치하는 경우, 'ok' 메세지와 상태코드 200이 응답에 포함되어야 합니다",
+      "duration": 55,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read properties of undefined (reading '0')\n    at Context.<anonymous> (__tests__/server.test.js:75:48)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+        "message": "Cannot read properties of undefined (reading '0')"
+      }
+    },
+    {
+      "title": "🧩 로그인 요청시 전달받은 유저 아이디 혹은 비밀번호가 잘못된 경우, 'invalid user' 메세지와 상태코드 404가 응답에 포함되어야 합니다",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 POST /signin 🧩 로그인 요청시 전달받은 유저 아이디 혹은 비밀번호가 잘못된 경우, 'invalid user' 메세지와 상태코드 404가 응답에 포함되어야 합니다",
+      "duration": 7,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 로그인 성공시 쿠키로 JWT 토큰을 전달해야 합니다.",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 POST /signin 🧩 로그인 성공시 쿠키로 JWT 토큰을 전달해야 합니다.",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '' to include 'jwt'",
+        "showDiff": false,
+        "actual": "",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '' to include 'jwt'\n    at Context.<anonymous> (__tests__/server.test.js:91:25)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    },
+    {
+      "title": "🧩 회원가입 요청이 성공하면 상태코드 201와 JWT 토큰이 응답에 포함되어야 합니다",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 POST /signup 🧩 회원가입 요청이 성공하면 상태코드 201와 JWT 토큰이 응답에 포함되어야 합니다",
+      "duration": 14,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read properties of undefined (reading '0')\n    at Context.<anonymous> (__tests__/server.test.js:105:48)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+        "message": "Cannot read properties of undefined (reading '0')"
+      }
+    },
+    {
+      "title": "🧩 해당 유저 email이 이미 데이터베이스에 존재한다면 409(conflict) 상태코드로 응답을 돌려줘야 합니다.",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 POST /signup 🧩 해당 유저 email이 이미 데이터베이스에 존재한다면 409(conflict) 상태코드로 응답을 돌려줘야 합니다.",
+      "duration": 7,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 username, email, password, mobile 파라미터 중 하나라도 요청에서 제공되지 않았다면 422(unprocessable entity) 상태코드로 응답을 돌려줘야 합니다.",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 POST /signup 🧩 username, email, password, mobile 파라미터 중 하나라도 요청에서 제공되지 않았다면 422(unprocessable entity) 상태코드로 응답을 돌려줘야 합니다.",
+      "duration": 20,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 로그아웃 요청시 205 상태코드로 응답해야 합니다.",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 POST /signout 🧩 로그아웃 요청시 205 상태코드로 응답해야 합니다.",
+      "duration": 5,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 쿠키에 jwt 토큰이 존재하며 토큰에 유저정보가 담겨져 있는경우, 해당 유저의 정보를 리턴해야 합니다 ",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 GET /auth 🧩 쿠키에 jwt 토큰이 존재하며 토큰에 유저정보가 담겨져 있는경우, 해당 유저의 정보를 리턴해야 합니다 ",
+      "duration": 8,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '' to include 'jwt'",
+        "showDiff": false,
+        "actual": "",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '' to include 'jwt'\n    at Test.<anonymous> (__tests__/server.test.js:191:31)\n    at Test.assert (node_modules/supertest/lib/test.js:181:6)\n    at localAssert (node_modules/supertest/lib/test.js:131:12)\n    at /home/suh/바탕화면/im-ha-section-3/ha-section-3-server/node_modules/supertest/lib/test.js:128:5\n    at Test.Request.callback (node_modules/superagent/lib/node/index.js:728:3)\n    at /home/suh/바탕화면/im-ha-section-3/ha-section-3-server/node_modules/superagent/lib/node/index.js:916:18\n    at IncomingMessage.<anonymous> (node_modules/superagent/lib/node/parsers/json.js:19:7)\n    at IncomingMessage.emit (node:events:402:35)\n    at endReadableNT (node:internal/streams/readable:1343:12)\n    at processTicksAndRejections (node:internal/process/task_queues:83:21)",
+        "uncaught": true
+      }
+    },
+    {
+      "title": "🧩 쿠키에 JWT이 없는 요청 혹은 잘못된 토큰을 전달받은 경우, 응답에는 'not authorized' 메세지가 포함되어야 합니다",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 GET /auth 🧩 쿠키에 JWT이 없는 요청 혹은 잘못된 토큰을 전달받은 경우, 응답에는 'not authorized' 메세지가 포함되어야 합니다",
+      "duration": 5,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [
+    {
+      "title": "🧩 로그인 요청시 전달받은 유저아이디, 비밀번호가 데이터베이스에 저장된 정보와 완벽히 일치하는 경우, 'ok' 메세지와 상태코드 200이 응답에 포함되어야 합니다",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 POST /signin 🧩 로그인 요청시 전달받은 유저아이디, 비밀번호가 데이터베이스에 저장된 정보와 완벽히 일치하는 경우, 'ok' 메세지와 상태코드 200이 응답에 포함되어야 합니다",
+      "duration": 55,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read properties of undefined (reading '0')\n    at Context.<anonymous> (__tests__/server.test.js:75:48)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+        "message": "Cannot read properties of undefined (reading '0')"
+      }
+    },
+    {
+      "title": "🧩 로그인 성공시 쿠키로 JWT 토큰을 전달해야 합니다.",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 POST /signin 🧩 로그인 성공시 쿠키로 JWT 토큰을 전달해야 합니다.",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '' to include 'jwt'",
+        "showDiff": false,
+        "actual": "",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '' to include 'jwt'\n    at Context.<anonymous> (__tests__/server.test.js:91:25)\n    at processImmediate (node:internal/timers:464:21)"
+      }
+    },
+    {
+      "title": "🧩 회원가입 요청이 성공하면 상태코드 201와 JWT 토큰이 응답에 포함되어야 합니다",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 POST /signup 🧩 회원가입 요청이 성공하면 상태코드 201와 JWT 토큰이 응답에 포함되어야 합니다",
+      "duration": 14,
+      "currentRetry": 0,
+      "err": {
+        "stack": "TypeError: Cannot read properties of undefined (reading '0')\n    at Context.<anonymous> (__tests__/server.test.js:105:48)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)",
+        "message": "Cannot read properties of undefined (reading '0')"
+      }
+    },
+    {
+      "title": "🧩 쿠키에 jwt 토큰이 존재하며 토큰에 유저정보가 담겨져 있는경우, 해당 유저의 정보를 리턴해야 합니다 ",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 GET /auth 🧩 쿠키에 jwt 토큰이 존재하며 토큰에 유저정보가 담겨져 있는경우, 해당 유저의 정보를 리턴해야 합니다 ",
+      "duration": 8,
+      "currentRetry": 0,
+      "err": {
+        "message": "expected '' to include 'jwt'",
+        "showDiff": false,
+        "actual": "",
+        "operator": "strictEqual",
+        "stack": "AssertionError: expected '' to include 'jwt'\n    at Test.<anonymous> (__tests__/server.test.js:191:31)\n    at Test.assert (node_modules/supertest/lib/test.js:181:6)\n    at localAssert (node_modules/supertest/lib/test.js:131:12)\n    at /home/suh/바탕화면/im-ha-section-3/ha-section-3-server/node_modules/supertest/lib/test.js:128:5\n    at Test.Request.callback (node_modules/superagent/lib/node/index.js:728:3)\n    at /home/suh/바탕화면/im-ha-section-3/ha-section-3-server/node_modules/superagent/lib/node/index.js:916:18\n    at IncomingMessage.<anonymous> (node_modules/superagent/lib/node/parsers/json.js:19:7)\n    at IncomingMessage.emit (node:events:402:35)\n    at endReadableNT (node:internal/streams/readable:1343:12)\n    at processTicksAndRejections (node:internal/process/task_queues:83:21)",
+        "uncaught": true
+      }
+    }
+  ],
+  "passes": [
+    {
+      "title": "🧩 데이터베이스에 연결해야 합니다.",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  데이터베이스 연결\n====================\n 🧩 데이터베이스에 연결해야 합니다.",
+      "duration": 3,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 데이터베이스에 `users` 테이블이 존재해야 합니다.",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  데이터베이스 연결\n====================\n 🧩 데이터베이스에 `users` 테이블이 존재해야 합니다.",
+      "duration": 3,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "HTTPS 프로토콜을 사용하는 서버여야 합니다.",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 Protocol - HTTP over Secure HTTPS 프로토콜을 사용하는 서버여야 합니다.",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 로그인 요청시 전달받은 유저 아이디 혹은 비밀번호가 잘못된 경우, 'invalid user' 메세지와 상태코드 404가 응답에 포함되어야 합니다",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 POST /signin 🧩 로그인 요청시 전달받은 유저 아이디 혹은 비밀번호가 잘못된 경우, 'invalid user' 메세지와 상태코드 404가 응답에 포함되어야 합니다",
+      "duration": 7,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 해당 유저 email이 이미 데이터베이스에 존재한다면 409(conflict) 상태코드로 응답을 돌려줘야 합니다.",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 POST /signup 🧩 해당 유저 email이 이미 데이터베이스에 존재한다면 409(conflict) 상태코드로 응답을 돌려줘야 합니다.",
+      "duration": 7,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 username, email, password, mobile 파라미터 중 하나라도 요청에서 제공되지 않았다면 422(unprocessable entity) 상태코드로 응답을 돌려줘야 합니다.",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 POST /signup 🧩 username, email, password, mobile 파라미터 중 하나라도 요청에서 제공되지 않았다면 422(unprocessable entity) 상태코드로 응답을 돌려줘야 합니다.",
+      "duration": 20,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 로그아웃 요청시 205 상태코드로 응답해야 합니다.",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 POST /signout 🧩 로그아웃 요청시 205 상태코드로 응답해야 합니다.",
+      "duration": 5,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "🧩 쿠키에 JWT이 없는 요청 혹은 잘못된 토큰을 전달받은 경우, 응답에는 'not authorized' 메세지가 포함되어야 합니다",
+      "fullTitle": "Section 3 Hiring Assessments \nℹ️  서버 구현\n============\n 🚩 GET /auth 🧩 쿠키에 JWT이 없는 요청 혹은 잘못된 토큰을 전달받은 경우, 응답에는 'not authorized' 메세지가 포함되어야 합니다",
+      "duration": 5,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}

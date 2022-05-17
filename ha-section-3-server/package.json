@@ -6,7 +6,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "prestart":"npx sequelize-cli db:migrate",
+    "prestart": "npx sequelize-cli db:migrate",
     "start": "node index.js",
     "pretest": "npx sequelize-cli db:migrate",
     "test": "NODE_ENV=test mocha '__tests__/server.test.js' --timeout 5000 --exit",
@@ -15,11 +15,15 @@
   },
   "dependencies": {
     "@codestates-cc/submission-npm": "^1.1.2",
+    "bcrypt": "^5.0.1",
     "cookie-parser": "^1.4.5",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "json-server": "^0.17.0",
     "jsonwebtoken": "^8.5.1",
+    "jwt-simple": "^0.5.6",
+    "moment": "^2.29.3",
     "mysql": "^2.18.1",
     "mysql2": "^2.1.0",
     "sequelize": "^6.3.5",
